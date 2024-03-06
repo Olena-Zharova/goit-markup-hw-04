@@ -241,6 +241,16 @@ color: #404bbf
         color: #434455;
 }
 
+.icon-container {
+        border: 1px solid #8e8f99;
+                border-radius: 4px;
+                width: 264px;
+                height: 112px;
+                background: #f4f4fd;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+}
 section { 
         padding-top: 120px;
         padding-bottom: 120px;
@@ -303,7 +313,34 @@ background: #ffffff;
         padding-top: 32px;
         padding-bottom: 32px;
 }
- 
+.social-icon-list{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+
+}
+.social-icon-list-item {
+       width: 40px;
+       height: 40px;
+}
+
+.social-link {
+        background-color: #4d5ae5;
+        fill: #ffffff;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       
+}
+
+.icon-team{
+        
+}
+  
 /* ------------Our Portfolio Section Style----------- */
 
 .our-portfolio {
@@ -318,6 +355,9 @@ background-color: #ffffff
 }
 .our-portfolio-list-item {
  width: calc(( 100% - 48px) / 3);
+}
+.our-portfolio-list-item:hover .portfolio-overlay{
+transform: translateY(0%)
 }
 
 .h-our-portfolio {
@@ -370,6 +410,9 @@ background-color: #ffffff
         overflow: auto;
         transform: translateY(100%);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        padding-top: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
 }
 
 .text-overlay { 
@@ -381,9 +424,6 @@ background-color: #ffffff
                 color: #f4f4fd;
 }
 
-.card-img:hover .portfolio-overlay {
-        transform: translateY(0%);
-}
 /* ---------------Footer Section Style---------- */
 
 .footer {
